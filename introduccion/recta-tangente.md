@@ -1,0 +1,24 @@
+# Recta tangente
+
+De acuerdo a Euclides, es una recta que toca a una curva en un solo punto.  Esto es válido para una circunferencia.
+
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="" class="gitbook-drawing">
+
+Con respecto a otras curvas, no es satisfactorio.
+
+<img src="../.gitbook/assets/file.excalidraw (5).svg" alt="" class="gitbook-drawing">
+
+
+
+
+
+El concepto de límite proporciona una manera de obtener una mejor descripción.
+
+Sea P un punto que pasa por P y Q, llamada “recta secante”. La recta tangente en P es la posición límite (si esta existe) de la recta secante cuando Q se mueve hacia P a lo largo de la curva.
+
+<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAZCAMAAACrSOZIAAAAAXNSR0IArs4c6QAAAIRQTFRFAAAAAAAAAABmADpmADqQAGaQAGa2OgAAOgA6OgBmOjqQOma2OpDbZgAAZgA6ZjpmZmaQZma2Zrb/kDoAkDo6kGY6kGZmkGaQkJC2kJDbkNvbkNv/tmYAtpCQttv/tv//25A625Bm25CQ27Zm27aQ2//b2////7Zm/9uQ/9u2//+2///bncgbAgAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA40lEQVQ4T+1S2xKCIBAFMysvldI9SixTgv//v7iWJFM99VI7wzgs5+yePSsA//hJB+r5Uc9d5c2HBpD0DqTxOxJfwqAEDq7D93fE0WXdAAdGJ+VLdWy6F+8cFR0UX4gcR0Epj8izDKoItWY6gjCynDMsOLK3eifqtOLWj1aRVR+2JcOVNM90xSmopIheEFXJoOhYYZQ2AEjENgr/pM0Ooj0wHOMBjQ9eL7QFAi2tojlOT+JrTGRZ15iHwlYZI4UkAIdNC0U/uyuW+4aRmm2+9+9cZ/4tuXtxyqKBn8KyxN/+e9kbTUMRoGfR7PgAAAAASUVORK5CYII=) P tiene coordenadas ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAbCAMAAADidZd+AAAAAXNSR0IArs4c6QAAAHtQTFRFAAAAAAAAAABmADpmADqQAGa2OgAAOgBmOjqQOma2OpDbZgAAZgA6ZgBmZjpmZmaQZma2Zrb/kDoAkDo6kGY6kGZmkGaQkLb/kNv/tmYAtpA6tpBmttv/tv//25A625Bm27Zm27aQ2//b2////7Zm/9uQ/9u2//+2///bgDPj+AAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAA9ElEQVQ4T+1SyRaCMAwsCChuKCqKCi4F2v//QtskLVTkPW56MCeYzEyzMfaPX5tAcziOKumecOSJ9XWUgLF6hpJ8OyR4JOh125B5Ode/9bQYUGAeOGQuVppbhn2B3Ht+YWg6TWKZ6npy69Qq8/CZ8faJthBNRpkbYnl6S8idQqggUshz5Jny6shT35gg3PjqFui7DHhly6sCNRtMEN5XQB02YBhAMni3KuwcXE2YZ1XC4GYFQAZDlWkyznDeZKxZhLvTBblMvYnaL1pVPu60jC3ubLB7JRfoxu504Ep6l/hpQ9iivQL32sUi7q0UAXvtA/lvwi8OJRamcqzqtwAAAABJRU5ErkJggg==)en un punto cercano. Q tiene coordenadas ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAbCAMAAAC0o3oIAAAAAXNSR0IArs4c6QAAAI1QTFRFAAAAAAAAAAA6AABmADpmADqQAGa2OgAAOgBmOjqQOma2OpDbZgAAZgA6ZgBmZjpmZjqQZmaQZma2ZrbbZrb/kDoAkDo6kGY6kGZmkGaQkJDbkLb/kNv/tmYAtpA6tpBmtpCQtrZmttv/tv//25A625Bm27Zm27aQ2//b2////7Zm/9uQ/9u2//+2///b8aUnMwAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAABZElEQVRIS+1UWVuDMBBMlBat9ahaz2LV4gE0+f8/T/ZKAgS+8tAn2YeWlpnZ3clmlZpicmByABzYP70ew4jvVUGy5vrzGPpKVeeUIbsfq/+zGi7p65aU8wv4rM52IxMQbyi4dnMF0vm8H1rqhpZ91Kc713mMJgSqwa7BnKxbjzetaV82/30uuPFQPkDxI9sC2pSlGY5gHzbBG3MJvyIEn0AI/A3uMN6+pdp55Qjm5iNN5IiqVAOECHG8EgKrBgnyWVE6r1yCMnmhg8IoZzAcxI3jlRA6Cah7CLPUGChWVyDD7MYBuT14RwgsokOm4iSkA9DyfYn5MCFxPHaHhOCQaUxrwr4eEA5JAPZkd+8F2SRVAzmOV0LgSaOSMJld68TfTkkAdWYnG66nrO8ARr7owWNjSKAlwefXXRXtf7Z4QP5GtldFG99cFYcuu9iFCc4t8ujm46B1bZaLYbnOW7euR/L+HfwPcf0nQppzIwQAAAAASUVORK5CYII=)y la recta secante P y Q tiene pendiente ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAZCAMAAAAYAM5SAAAAAXNSR0IArs4c6QAAAHhQTFRFAAAAAAAAAAA6AABmADqQAGa2OgAAOgBmOjpmOma2OpDbZgBmZjoAZjpmZjqQZpC2Zrb/kDoAkJDbkNv/tmYAtmY6tmZmtmaQtpCQtpC2ttu2ttv/tv+2tv//25A627Zm29uQ2//b2////7Zm/9uQ/9u2//+2///bOOSUNQAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAAAjUlEQVQoU+1QzRrCIAxrcZuM4QTZ/JswBeze/w0Fb5OLNy/20EPSJP0C8J8fNUCyfkpmRmyLB853vn9obkLlCy5hi1bgRPl2wuLWwqAKKitCDdRdDzDixkbJFESJ6ZI6m81IV556f7r1kxO0M8GsTWY+BcTWhyL3aINwYrn491qpBmQmNjmqYR9+35f+AhclCVYHoPIcAAAAAElFTkSuQmCC)dada por:![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAhCAMAAAB0r6y8AAAAAXNSR0IArs4c6QAAAJBQTFRFAAAAAAAAAAA6ADqQAGa2OgAAOgBmOjpmOjqQOma2OpC2OpDbZgAAZgBmZjoAZjpmZjqQZma2ZpBmZpC2ZpDbZrb/kDoAkDo6kDpmkJDbkLbbkNvbkNv/tmYAtmY6tpCQtpC2ttu2tv//25A625Bm25CQ27aQ29uQ29v/2//b2////7Zm/9uQ/9u2//+2///bW3TeogAAAAF0Uk5TAEDm2GYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAZdEVYdFNvZnR3YXJlAE1pY3Jvc29mdCBPZmZpY2V/7TVxAAABXUlEQVRIS+2U63KDIBCFocamrY29Sm8maTW9AYX3f7vuAioGM2YiM53phF8KH4fl7LKEHMfRgX/qgF6X4c0+nrfmGipYGHBF5Scl2fRVNcuQFEXHI9ZS/sIOo2vYq262Fu0+fxqw7jfgA+2a0oLIe5iXOXy5vZvbFOLVj1XDI9ZR3sKOYA2BG9RVKcAKEwiYIM97soh11LisPONWS6CdMqWUJlxdc7QBpgX8wwRBrKVC04KYjRqmrM70qzuBQKirly8/ZQZrqfGULU1yoHRkChXhTACRZcLfvQIzWEP5C8Pe6oeBgg3RPbFmo2YX+zzwIUzlsx+o5RWF3OItLzELJg+TxvpzfvfN5qUYErJHHDCgdBKuWQGpnhRd+JAyIk8rYnMezQSMVMyIWrw9xQxXLSo0QLGpSYoRlOuNMaR6GuMP9KAjbW+MPVxvjC3remNsWdcbY8va3hhb9a/0fgFAviE649P5wQAAAABJRU5ErkJggg==)
+
+<img src="../.gitbook/assets/file.excalidraw (6).svg" alt="" class="gitbook-drawing">
+
